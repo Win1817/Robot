@@ -80,10 +80,10 @@ void loop() {
 
     if (command == 'A') {
       mode = 'A';  
-      Serial.println("🔄 Automatic Mode (Line-Following)");
+      Serial.println("Automatic Mode (Line-Following)");
     } else if (command == 'M') {
       mode = 'M';  
-      Serial.println("🎮 Manual Mode (Bluetooth Control)");
+      Serial.println("Manual Mode (Bluetooth Control)");
       stopMotors();  
     } else if (mode == 'M') {  
       processManualCommand(command);
